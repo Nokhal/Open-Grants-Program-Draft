@@ -100,7 +100,7 @@ So far, we have determined that the protocol must allow for the following featur
 * **Cost per work day:** £300
 * **Costs:** £6,000
 
-We will write up the ‘Checked Migration’ process which includes a security protocol to ensure that both the sender and the receiver are satisfied with the migration outcome in a decentralized and trustless fashion.
+We will write up the ‘Checked Migration’ process which includes a security protocol to ensure that both the sender and the receiver are satisfied with the migration outcome.
 This is especially important if NFT's are migrating from/to a trustless universe (eg : a public decentralized blockchain) toward/from a centralized/private universe.
 
 * A checked migration process mean there is an acknowledgment of the migration on the destination universe by the sender.
