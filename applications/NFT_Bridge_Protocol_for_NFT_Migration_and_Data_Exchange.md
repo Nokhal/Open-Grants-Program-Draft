@@ -109,7 +109,7 @@ This process is NOT a fully decentralized trustless process itself in order to a
 * The migration is complete only once both the sender and receiver have acknowledged the migration. Before that, the migrated token cannot be used.
 * If after a time-limit, either of those acknowledgement are missing, the migration is reverted : the original token can be withdrawn freely by the sender, and the migrated token is burned.
 * Checked migrations need to be possible for either EVM => EVM, * => EVM or EVM => * migrations.
-* Checked migrations need to allow any third party to "check" the migration and publish a signed message that the transaction did indeed happen.
+* Checked migrations need to allow any third party to "check" the migration and publish a standardized signed message that the migration did indeed happen.
 * NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
 
 ### Milestone 3 — Trustless Migration Process
