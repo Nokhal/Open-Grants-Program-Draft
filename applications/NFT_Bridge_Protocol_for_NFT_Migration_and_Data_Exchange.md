@@ -13,7 +13,7 @@ In this proposal, we use the following terms and definitions:
    
 * *NFT:* Intangible asset that is compatible with the ERC-721 standard (i.e. the unique intangible asset is abstracted from the concept of token, which is how the asset is represented on a blockchain). An NFT always exists in a world, which is itself in a universe.   
    
-* *Universe* e.g. a blockchain, the Web2.0 internet, a private company’s database…   
+* *Universe* e.g. a blockchain or parachain, the Web2.0 internet, a private company’s database…   
    
 * *World (within a universe)* e.g. a smart contract or smart contract ecosystem, a website, a private company project…   
    
@@ -94,18 +94,34 @@ So far, we have determined that the protocol must allow for the following featur
 * Migrate an NFT with either a ‘checked’ migration (need to be acknowledged by both the sender and the receiver of a token) or ‘unchecked’ migration (the token in the original world needs to first be attributed to a tokenID on the destination chain, then it is simply put in escrow with the bridge on the origin chain). NB: Checked migrations are fully trutless and decentralized and optimised for security, whilst unchecked migrations are optimised for gas costs. 
 
 ### Milestone 2 — Checked Migration Process
-* **Estimated Duration:** ~3 weeks
+* **Estimated Duration:** ~2 weeks
 * **FTE:**  2
-* **Work Days:** 30 days
+* **Work Days:** 20 days
 * **Cost per work day:** £300
-* **Costs:** £9,000
+* **Costs:** £6,000
 
 We will write up the ‘Checked Migration’ process which includes a security protocol to ensure that both the sender and the receiver are satisfied with the migration outcome in a decentralized and trustless fashion.
-* Acknowledgment of migration on origin blockchain by the receiver
-* Before this acknowledgement on the origin chain by the receiver, the sender can withdraw their token(s) from the bridge once a set timestamp has been reached (timelock).
-* Challenge: Checked migration needs to be possible for either EVM => EVM, * => EVM or EVM => * migrations.
+This is especially important if NFT's are migrating from/to a trustless universe (eg : a public decentralized blockchain) toward/from a centralized/private universe.
+It should be noted that if the origin universe and the destination universe are both trustless, then the migration itself doesn't have to be trustless to nonetheless guarantee it was properly executed : The origin token can be checked to be in a trustless escrow, and data written by the token sender should clearly designate the genuine destination token.
 
-### Milestone 3 — Standard and Documentation for Cross-universe Migration
+* A checked migration process mean there is an acknowledgment of the migration on the origin universe by the receiver
+* A checked migration process mean there is an acknowledgment of the migration on the destination universe by the sender.
+* The migration is complete only once both the sender and receiver have acknowledged the migration. Before that, the migrated token cannot be used.
+* If after a time-limit, either of those acknowledgement are missing, the migration is reverted : the original token can be withdrawn freely by the sender, and the migrated token is burned
+* Checked migration needs to be possible for either EVM => EVM, * => EVM or EVM => * migrations.
+* NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
+
+### Milestone 3 — Trustless Migration Process
+* **Estimated Duration:** ~1 week
+* **FTE:**  2
+* **Work Days:** 10 days
+* **Cost per work day:** £300
+* **Costs:** £3,000
+
+We will write up the ‘Unchecked Migration’ process which is designed to be used when the destination universe have trutless state reading capabilities of the origin universe.
+* Snowfork is already building a substrate module allowing specifically for Ethereum Smart contract reading. If a Substrate-built parachain implement those 
+
+### Milestone 4 — Standard and Documentation for Cross-universe Migration
 * **Estimated Duration:** ~1 week
 * **FTE:**  2
 * **Work Days:** 15 days
@@ -126,13 +142,13 @@ Research on the bridge protocol is already under way.
 This proposal is part of a series of grant proposals that we have submitted:
 |  #  | Grant Title   | Link  |
 | :---: | :------------- | :-----: |
-| 1      | Protocol for NFT Migration and Data Exchange |  [link](./NFT_Bridge_Protocol_for_NFT_Migration_and_Data_Exchange.md) |
-| 2 | Standardized Interface and Implementation of IOU NFT Migration |  [link](./NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Migration.md) |
-| 3 | Standard for Reading Information About a Migrated NFT   |   [link](./NFT_Bridge_Standard_for_Reading_Information_About_a_Migrated_NFT.md) |
-| 4 | Standardized Interface and Implementation of IOU NFT Redemption |   [link](./NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Redemption.md) |
-| 5 | Standard for Decentralised, Trustless Cross-chain Verification of Ownership |   [link](./NFT_Bridge_Standard_for_Decentralised_Trustless_Cross-chain_Verification_of_Ownership.md) |
-| 6 |  Protocol and Implementation of a Singular, Decentralized, Trustless NFT Bridge with Digital Rights Management |   [link](./NFT_Bridge_Protocol_and_Implementation_of_a_Singular_Decentralized_Trustless_NFT_Bridge_with_Digital_Rights_Management.md) |
-| 7 | Protocol, Interface and Implementation of a Cross-chain Ownership and Digital Rights Management Authority | [link](./NFT_Bridge_Protocol_Interface_and_Implementation_of_a_Cross-chain_Ownership_and_Digital_Rights_Management_Authority.md) |
-| 8 | Governance System for Bridge Upgradability   |   [link](./NFT_Bridge_Governance_System_for_Bridge_Upgradability.md) |
-| 9 | EIP and Implementation of All Previous Grant Proposals   |   [link](./NFT_Bridge_EIP_and_Implementation_of_All_Previous_Grant_Proposals.md) |
-| 10 | Deployment and Operation of EVM NFT Bridges   |   [link](./NFT_Bridge_Deployment_and_Operation_of_EVM_NFT_Bridges.md) |
+| 1      | Protocol for NFT Migration and Data Exchange |  [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Protocol_for_NFT_Migration_and_Data_Exchange.md) |
+| 2 | Standardized Interface and Implementation of IOU NFT Migration |  [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Migration.md) |
+| 3 | Standard for Reading Information About a Migrated NFT   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Standard_for_Reading_Information_About_a_Migrated_NFT.md) |
+| 4 | Standardized Interface and Implementation of IOU NFT Redemption |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Redemption.md) |
+| 5 | Standard for Decentralised, Trustless Cross-chain Verification of Ownership |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Standard_for_Decentralised_Trustless_Cross-chain_Verification_of_Ownership.md) |
+| 6 |  Protocol and Implementation of a Singular, Decentralized, Trustless NFT Bridge with Digital Rights Management |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Protocol_and_Implementation_of_a_Singular_Decentralized_Trustless_NFT_Bridge_with_Digital_Rights_Management.md) |
+| 7 | Protocol, Interface and Implementation of a Cross-chain Ownership and Digital Rights Management Authority | [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Protocol_Interface_and_Implementation_of_a_Cross-chain_Ownership_and_Digital_Rights_Management_Authority.md) |
+| 8 | Governance System for Bridge Upgradability   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Governance_System_for_Bridge_Upgradability.md) |
+| 9 | EIP and Implementation of All Previous Grant Proposals   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_EIP_and_Implementation_of_All_Previous_Grant_Proposals.md) |
+| 10 | Deployment and Operation of EVM NFT Bridges   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/NFT_Bridge_Deployment_and_Operation_of_EVM_NFT_Bridges.md) |
