@@ -102,7 +102,7 @@ So far, we have determined that the protocol must allow for the following featur
 
 We will write up the ‘Checked Migration’ process which includes a security protocol to ensure that both the sender and the receiver are satisfied with the migration outcome.
 This is especially important if NFT's are migrating from/to a trustless universe (eg : a public decentralized blockchain) toward/from a centralized/private universe.
-This process is NOT a fully decentralized trustless process itself in order to accomodate for a wide array of possible origin and destinations, but it does allow decentralized trustless outcomes while guarateeing authenticity and ownership of the NFT at every step. 
+This process is NOT a fully decentralized trustless process itself in order to accomodate for a wide array of possible origin and destinations, but it does allow decentralized trustless outcomes while guaranteeing authenticity and ownership of the NFT at every step. 
 
 * A checked migration process mean there is an acknowledgment of the migration on the destination universe by the sender.
 * A checked migration process mean there is an acknowledgment of the migration on the origin universe by the receiver
@@ -112,10 +112,6 @@ This process is NOT a fully decentralized trustless process itself in order to a
 * Checked migrations need to allow any third party to "check" the migration and publish a standardized signed message that the migration did indeed happen.
 * NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
 
-*As will be explained further in the deliverable, the whole idea behind this migration protocol is to allow NFT publishers to migrate their projects to the Polkadot network, potentially by doing it for free for all their users trough meta transactions and as publisher, self signing those migrations as genuine as Moonbeam will not be able to trustlessly read ethereum mainnet at first. This standardization of the migration would then allow third-parties to read the proper state of an NFT without having to specifically implement a custom solution for each NFT project.* 
-
-
-
 ### Milestone 3 — Trustless Migration Process
 * **Estimated Duration:** ~1 week
 * **FTE:**  2
@@ -123,8 +119,9 @@ This process is NOT a fully decentralized trustless process itself in order to a
 * **Cost per work day:** £300
 * **Costs:** £3,000
 
-We will write up the ‘Trustless Migration’ process which is designed to be used when the destination universe have trutless state reading capabilities of the origin universe.
+We will write up the ‘Trustless Migration’ process which is designed to be used when the destination universe have trutsless state reading capabilities of the origin universe.
 * Snowfork is already building a substrate module allowing specifically for Ethereum Smart contract reading. If a Substrate-built parachain implement those reading capacities, then implementation of this process should be straightforward.
+* In the case of EVM => EVM ERC-721 migration without trustless reading, Chainbridge already exist. However, their contracts requires administrator input for new contract registration as well as lacking features that are NFT specifics (IOU vs Full migration).
 * NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
 
 ### Milestone 4 — Standard and Documentation for Cross-universe Migration
