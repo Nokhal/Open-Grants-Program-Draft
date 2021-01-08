@@ -112,6 +112,9 @@ This process is NOT a fully decentralized trustless process itself in order to a
 * Checked migrations need to allow any third party to "check" the migration and publish a standardized signed message that the migration did indeed happen.
 * NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
 
+*As will be explained further in the deliverable, the whole idea behind this migration protocol is to allow NFT publishers to migrate their projects to the Polkadot network, potentially by doing it for free for all their users trough meta transactions and as publisher, self signing those migrations as genuine as Moonbeam will not be able to trustlessly read ethereum mainnet at first. This standardization of the migration would then allow third-parties to read the proper state of an NFT without having to specifically implement a custom solution for each NFT project.* 
+
+
 ### Milestone 3 — Trustless Migration Process
 * **Estimated Duration:** ~1 week
 * **FTE:**  2
