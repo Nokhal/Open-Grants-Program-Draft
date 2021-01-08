@@ -102,7 +102,6 @@ So far, we have determined that the protocol must allow for the following featur
 
 We will write up the ‘Checked Migration’ process which includes a security protocol to ensure that both the sender and the receiver are satisfied with the migration outcome in a decentralized and trustless fashion.
 This is especially important if NFT's are migrating from/to a trustless universe (eg : a public decentralized blockchain) toward/from a centralized/private universe.
-It should be noted that if the origin universe and the destination universe are both trustless, then the migration itself doesn't have to be trustless to nonetheless guarantee it was properly executed : The origin token can be checked to be in a trustless escrow, and data written by the token sender should clearly designate the genuine destination token while the destination token should reference it's origin token.
 
 * A checked migration process mean there is an acknowledgment of the migration on the destination universe by the sender.
 * A checked migration process mean there is an acknowledgment of the migration on the origin universe by the receiver
