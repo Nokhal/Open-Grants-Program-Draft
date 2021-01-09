@@ -142,18 +142,5 @@ We will implement this standard for EVM-compatible chains. Our main goal is the 
 
 ## Additional Information :heavy_plus_sign: 
 This proposal is a part of the wider NFT.com venture.
-Research on the bridge protocol is already under way. 
 
-This proposal is part of a series of grant proposals that we have submitted:
-|  #  | Grant Title   | Link  |
-| :---: | :------------- | :-----: |
-| 1      | Protocol for NFT Migration and Data Exchange |  [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Protocol_for_NFT_Migration_and_Data_Exchange.md) |
-| 2 | Standardized Interface and Implementation of IOU NFT Migration |  [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Migration.md) |
-| 3 | Standard for Reading Information About a Migrated NFT   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Standard_for_Reading_Information_About_a_Migrated_NFT.md) |
-| 4 | Standardized Interface and Implementation of IOU NFT Redemption |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Standardized_Interface_and_Implementation_of_IOU_NFT_Redemption.md) |
-| 5 | Standard for Decentralised, Trustless Cross-chain Verification of Ownership |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Standard_for_Decentralised_Trustless_Cross-chain_Verification_of_Ownership.md) |
-| 6 |  Protocol and Implementation of a Singular, Decentralized, Trustless NFT Bridge with Digital Rights Management |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Protocol_and_Implementation_of_a_Singular_Decentralized_Trustless_NFT_Bridge_with_Digital_Rights_Management.md) |
-| 7 | Protocol, Interface and Implementation of a Cross-chain Ownership and Digital Rights Management Authority | [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Protocol_Interface_and_Implementation_of_a_Cross-chain_Ownership_and_Digital_Rights_Management_Authority.md) |
-| 8 | Governance System for Bridge Upgradability   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Governance_System_for_Bridge_Upgradability.md) |
-| 9 | EIP and Implementation of All Previous Grant Proposals   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_EIP_and_Implementation_of_All_Previous_Grant_Proposals.md) |
-| 10 | Deployment and Operation of EVM NFT Bridges   |   [link](https://github.com/Nokhal/Open-Grants-Program-Draft/blob/main/applications/NFT_Bridge_Deployment_and_Operation_of_EVM_NFT_Bridges.md) |
+Learn more about our vision for the bridge here: [link](https://docs.google.com/document/d/1mhSKmC_4Hg7GqJuSLZk5Tu1hNjJlqo6O5TNwFx-e6vw/edit?usp=sharing) 
