@@ -125,7 +125,7 @@ This process is NOT a fully decentralized trustless process itself in order to a
 
 We will write up the ‘Trustless Migration’ process which is designed to be used when the destination universe have trutsless state reading capabilities of the origin universe.
 * Snowfork is already building a substrate module allowing specifically for Ethereum Smart contract reading. If a Substrate-built parachain implement those reading capacities, then implementation of this process should be straightforward.
-* In the case of EVM => EVM ERC-721 migration without trustless reading, Chainbridge already exist. However, their contracts requires administrator input for new contract registration as well as lacking features that are NFT specifics, such as preventing minting technically correct but legally counterfeit tokens.
+* In the case of EVM => EVM ERC-721 migration without trustless reading, Chainbridge already exist. However, their contracts requires administrator input for new contract registration as well as lacking features that are NFT specific, such as preventing minting technically correct but legally counterfeit tokens.
 * NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
 
 ### Milestone 4 — Standard and Documentation for Cross-universe Migration
