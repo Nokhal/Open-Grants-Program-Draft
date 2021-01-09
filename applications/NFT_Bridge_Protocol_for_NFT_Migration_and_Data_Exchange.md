@@ -112,7 +112,7 @@ This process is NOT a fully decentralized trustless process itself in order to a
 * Checked migrations need to allow any third party to "check" the migration and publish a standardized signed message that the migration did indeed happen.
 * NB : This only cover the migration of NFTs to a new universe, not the redemption of the the NFT back to it's origin universe.
 
-*The main purpose of this migration process is for NFT publishers to allow their users to effortlessly migrate their tokens with the least amount of efforts required. NFT publishers could offer users to do the whole migration with a single gas spending approve() from an NFT owner and the rest trougn meta-transactions by the publisher. The publisher would then sign the migration as properly done after having minted and transferred the token on the destination blockchain. By essence, most NFTs are not trustless assets as their publishers own real world IP rights to them, and it is hence acceptable to use said publishers as relayers. This is standardizing a process that would otherwise require the publisher to update their original NFT smart contracts or NFT owners to burn their original NFT token in order to get a new one minted on the destination universe.*
+*The main purpose of this migration process is for NFT publishers to allow their users to effortlessly migrate their tokens with the least amount of efforts required. NFT publishers could offer users to do the whole migration with a single gas spending approve() from an NFT owner and the rest trough meta-transactions by the publisher. The publisher would then sign the migration as properly done after having minted and transferred the token on the destination blockchain. By essence, most NFTs are not trustless assets as their publishers own real world IP rights to them, and it is hence acceptable to use said publishers as relayers. This is standardizing a process that would otherwise require the publisher to update their original NFT smart contracts or NFT owners to burn their original NFT token in order to get a new one minted on the destination universe.*
 
 ### Milestone 3 — Trustless Migration Process
 * **Estimated Duration:** ~1 week
@@ -133,7 +133,7 @@ We will write up the ‘Trustless Migration’ process which is designed to be u
 * **Cost per work day:** £300
 * **Costs:** £4,500
 
-We will write up the standard and documentation for cross-universe migration, which includes “necessary” and “optional” data for optimization (the less data the better, as this data is going to be written on both universes).
+We will write up the standard and documentation for cross-universe migration, which includes “necessary” and “optional” data for optimization (the less data the better, as this data is going to be written on both universes). 
 * Challenge: To establish what the necessary “bytes” are to be transmitted from universe to universe for all kinds of migration (*checked/unchecked, IOU/Full migration).
 
 ## Future Plans
