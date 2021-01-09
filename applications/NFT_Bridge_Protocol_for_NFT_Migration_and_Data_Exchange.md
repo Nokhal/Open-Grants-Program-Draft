@@ -133,8 +133,8 @@ We will write up the ‘Trustless Migration’ process which is designed to be u
 * **Cost per work day:** £300
 * **Costs:** £4,500
 
-We will write up the standard and documentation for cross-universe migration, which includes “necessary” and “optional” data for optimization (the less data the better, as this data is going to be written on both universes). 
-* Challenge: To establish what the necessary “bytes” are to be transmitted from universe to universe for all kinds of migration (*checked/unchecked, IOU/Full migration).
+We will write up the standard and documentation for cross-universe migration, which includes “necessary” and “optional” data for optimization. This is a summarized write up of both the previous milestones but writen as specifications for implementations, including the predicate and postulate of each message and what they mean in term of state on the source and destination universe.
+* Challenge: Establishing predicate and postulate on what are the allowed pair of source/destination worlds. Those allowed pairs could be designed in any fashion, from centralized trusted to decentralized and trust minimized.
 
 ## Future Plans
 We will implement this standard for EVM-compatible chains. Our main goal is the ability for any Ethereum mainnet NFT to be painlessly migrated to Moonbeam on the Polkadot network.
