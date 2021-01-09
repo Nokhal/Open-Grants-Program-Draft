@@ -82,6 +82,7 @@ To our knowledge, there is currently no work being done on a standardized, unive
 * **Work Days:** 21 days
 * **Cost per work day:** £300
 * **Costs:** £6,300 (8558.05 USD/DAI)
+* **Deliverable:** A list of clearly defined, measurable features that the final bridges built using this vision should support, as well as how to test them using pseudocode.    
 
 We will write up and engage with the community to determine the desirable features of a NFT migration and data exchange messaging protocol.
 So far, we have determined that the protocol must allow for the following features:
@@ -101,6 +102,7 @@ So far, we have determined that the protocol must allow for the following featur
 * **Work Days:** 20 days
 * **Cost per work day:** £300
 * **Costs:** £6,000 (8150.52 USD/DAI)
+* **Deliverable:** A documented step by step process that would allow a trusted relayer to perform efficient migrations of NFTs.       
 
 We will write up the ‘Checked Migration’ process which includes a security protocol to ensure that both the sender and the receiver are satisfied with the migration outcome.
 This is especially important if NFT's are migrating from/to a trustless universe (eg : a public decentralized blockchain) toward/from a centralized/private universe.
@@ -122,6 +124,7 @@ This process is NOT a fully decentralized trustless process itself in order to a
 * **Work Days:** 10 days
 * **Cost per work day:** £300
 * **Costs:** £3,000 (4075.26 USD/DAI)
+* **Deliverable:** A documented step by step process that would allow a trust-minimized relayer to perform migrations of NFTs.    
 
 We will write up the ‘Trustless Migration’ process which is designed to be used when the destination universe have trutsless state reading capabilities of the origin universe.
 * Snowfork is already building a substrate module allowing specifically for Ethereum Smart contract reading. If a Substrate-built parachain implement those reading capacities, then implementation of this process should be straightforward.
@@ -134,6 +137,7 @@ We will write up the ‘Trustless Migration’ process which is designed to be u
 * **Work Days:** 15 days
 * **Cost per work day:** £300
 * **Costs:** £4,500 (6112.89 USD/DAI)
+* **Deliverable:** A standard written in pseudo-solidity including predicate and postulate for each function and events that would allow for either checked or trustless migrations to be performed for the same asset, from the same bridge.  
 
 We will write up the standard and documentation for cross-universe migration, which includes “necessary” and “optional” data for optimization. This is a summarized write up of both the previous milestones but writen as specifications for implementations, including the predicate and postulate of each message and what they mean in term of state on the source and destination universe.
 * Challenge: Establishing predicate and postulate on what are the allowed pair of source/destination worlds. Those allowed pairs could be designed in any fashion, from centralized trusted to decentralized and trust minimized.
