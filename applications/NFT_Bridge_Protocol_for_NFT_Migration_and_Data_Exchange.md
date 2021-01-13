@@ -12,21 +12,21 @@ This proposal is in response to Polkadot Bridge RFP.
 ### Overview
 
 In this proposal, we use the following terms and definitions:   
-   
+
 * *NFT:* Intangible asset that is compatible with the ERC-721 standard (i.e. the unique intangible asset is abstracted from the concept of token, which is how the asset is represented on a blockchain). An NFT always exists in a world, which is itself in a universe.   
-   
+
 * *Universe* e.g. a blockchain or parachain, the Web2.0 internet, a private company’s database…   
-   
+
 * *World (within a universe)* e.g. a smart contract or smart contract ecosystem, a website, a private company project…   
-   
+
 * *Migration:* The movement of an NFT from an origin universe to a destination universe.   
-    
+
 * *IOU migration:* An NFT migration where the original token is put in escrow in the origin universe bridge, and a deed that allows the bearer to redeem that original token in the origin universe is created in the destination universe.   
-     
+
 * *Full migration:* An NFT migration which is handled by the publisher of the NFT, who controls the destination world, and thus can allow the NFT’s features and intellectual property rights to be transferred to the new token in the destination universe.   
-     
+
 * *Digital Rights Management:* The systematic approach to prevent unauthorized redistribution of digital rights and intellectual property rights infringement during a full NFT migration.   
-    
+
 
 The aim of this proposal is to standardize what information is sufficient and which are necessary to allow the migration of an NFT from an arbitrary universe to another. Both of the endpoints (origin universe/world and destination universe/world) must be ERC-721 compatible, but they do not have to be blockchains (e.g : domain name tokenization using an ERC-721 compatible API).
 
@@ -74,7 +74,7 @@ To our knowledge, there is currently no work being done on a standardized, unive
 * **Full-time equivalent (FTE):**  2 FTE
 * **Total Work Days:** 66 days
 * **Cost per work day:** £300
-* **Total Costs:** £19,800
+* **Total Costs:** £19,800 (26862.66 USD/DAI)
 
 ### Milestone 1 — Desirable Protocol Features 
 * **Estimated Duration:** ~2 weeks
@@ -144,7 +144,6 @@ We will write up the standard and documentation for cross-universe migration, wh
 
 ## Future Plans
 We will implement this standard for EVM-compatible chains. Our main goal is the ability for any Ethereum mainnet NFT to be painlessly migrated to Moonbeam on the Polkadot network.
-
 
 ## Additional Information :heavy_plus_sign: 
 This proposal is a part of the wider NFT.com venture.
